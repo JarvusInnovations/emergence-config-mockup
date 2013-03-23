@@ -1,0 +1,28 @@
+{
+	"hostname": "skeleton.jarv.us",
+	"aliases": ["skel.jarv.us", "s.jarv.us"],
+	"services": {
+		"filesystem": {
+			"type": "emergence", // default=disk, full name is filesystem.emergence
+			"layers": [
+				"http://dwoo.layers.emr.ge",
+				"http://editor-2.layers.emr.ge"
+			]
+		},
+		"web": {
+			"type": "nginx" // default=web, because of key name, full type is web.nginx
+			// nginx is a sub-type of web
+
+			"root": {
+				"type": "emergence", // default=emergence, full type is web-root.emergence
+				"basePath": "site-root" // web-root.default=site-root
+			} // web.default=emergence
+			// "root": "emergence" would be equivalent with defaults
+		},
+		"mysql": {
+			// "type": "mysql" is implied, full type is sqldb.mysql
+
+			"minVersion": "5.1"
+		}
+	}
+}

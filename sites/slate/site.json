@@ -1,0 +1,22 @@
+{
+	"hostname": "master.slate.is",
+	"parent": {
+		"hostname": "skeleton.jarv.us",
+		"key": "aOEUhtnbASOTHsoeu234AOEUoe34"
+	},
+	
+	// services get inherited
+	"services": {
+		"filesystem": {
+			"layers": {
+				"push": [
+					"http://chat.layers.jarv.us"
+				]
+			}
+		},
+		"chatd": {
+			"type": "nodejs",
+			"scriptPath": "node-services/chatd/chatd.js"
+		}
+	}
+}

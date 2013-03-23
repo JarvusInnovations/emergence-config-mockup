@@ -1,0 +1,21 @@
+{
+	"services": {
+		"mysql": {
+			"user": {
+				"username": "skeleton",
+				"password": "e34e8euoEUoe"
+			}
+			"database": "skeleton"
+		}
+
+		// this service was automatically added by the filesystem.emergence
+		"emergence-mysql": {
+			"type": "mysql",
+			"user": {
+				"username": "skeleton",
+				"password": "e34e8euoEUoe"
+			}
+			"database": "skeleton_efs"
+		}
+	}
+}
